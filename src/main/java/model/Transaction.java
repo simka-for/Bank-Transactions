@@ -47,4 +47,10 @@ public class Transaction {
         return (this.fromAccountNumber.equals(other.fromAccountNumber) &&
                 this.toAccountNumber.equals(other.toAccountNumber));
     }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "id='" + id + "}";
+    }
 }

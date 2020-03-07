@@ -6,6 +6,8 @@ import model.Transaction;
 import java.util.ArrayList;
 import java.util.List;
 
+// Launch in thread mode
+
 public class Runner {
 
     private static List<Thread> threads = new ArrayList<>();
@@ -118,6 +120,43 @@ public class Runner {
             List<Transaction> transactions = Generator.generateTransactions(bank.getAccounts(), numTransactions);
             transactionQueue.add(transactions);
         }
+    }
+
+    public int getNumJobs() {
+        return numJobs;
+    }
+
+    public void setNumJobs(int numJobs) {
+        this.numJobs = numJobs;
+    }
+
+    public int getNumAccounts() {
+        return numAccounts;
+    }
+
+    public void setNumAccounts(int numAccounts) {
+        this.numAccounts = numAccounts;
+    }
+
+    public int getNumTransactions() {
+        return numTransactions;
+    }
+
+    public void setNumTransactions(int numTransactions) {
+        this.numTransactions = numTransactions;
+    }
+
+    public void setDebug(boolean debug) {
+        Runner.debug = debug;
+        bank.setDebug(debug);
+    }
+
+    public int getElapsedTime() {
+        return elapsedTime;
+    }
+
+    public Bank getBank() {
+        return bank;
     }
 
 }

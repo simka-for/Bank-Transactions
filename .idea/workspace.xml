@@ -2,25 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="926232f5-bab0-4673-8338-19e8ed1e9df9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/AccountBalanceChangeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/AccountIsBlockedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/BankException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/BankTransferException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Fraud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/TransactionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Generator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BankTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TransactionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BankTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Account$STATE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BankTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Generator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,52 +53,51 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Generator">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.Generator" />
-      <module name="Bank-Transactions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Bank-Transactions" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankTest.testDeadLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BankTest.testBankLocksAccountsWithFraudTransactions">
+    <configuration name="BankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Bank-Transactions" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BankTest" />
-      <option name="METHOD_NAME" value="testDeadLock" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest.testBankGetBalanceAccountNumberIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank-Transactions" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testBankGetBalanceAccountNumberIsNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankTest.testIsFraud" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankTest.testBankGetBalanceAccountNumberIsWrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Bank-Transactions" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BankTest" />
-      <option name="METHOD_NAME" value="testIsFraud" />
+      <option name="METHOD_NAME" value="testBankGetBalanceAccountNumberIsWrong" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankTest.transferMoreThanFiftyThousandUsingMultithreading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankTest.testBankLocksAccountsWithFraudTransactions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Bank-Transactions" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BankTest" />
-      <option name="METHOD_NAME" value="transferMoreThanFiftyThousandUsingMultithreading" />
+      <option name="METHOD_NAME" value="testBankLocksAccountsWithFraudTransactions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest.testBankOpenMultipleAccounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank-Transactions" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testBankOpenMultipleAccounts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Generator" />
-        <item itemvalue="JUnit.BankTest.testDeadLock" />
-        <item itemvalue="JUnit.BankTest.testIsFraud" />
-        <item itemvalue="JUnit.BankTest.transferMoreThanFiftyThousandUsingMultithreading" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BankTest.testBankLocksAccountsWithFraudTransactions" />
+        <item itemvalue="JUnit.BankTest.testBankGetBalanceAccountNumberIsWrong" />
+        <item itemvalue="JUnit.BankTest" />
+        <item itemvalue="JUnit.BankTest.testBankGetBalanceAccountNumberIsNull" />
+        <item itemvalue="JUnit.BankTest.testBankOpenMultipleAccounts" />
       </list>
     </recent_temporary>
   </component>
@@ -139,10 +131,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1583584005064" />
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1583584275049">
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1583598790954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583584275049" />
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583598790954" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583583995342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -151,42 +143,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583512237501" />
-    <state width="1877" height="167" key="GridCell.Tab.0.bottom" timestamp="1583593496081">
+    <state width="1877" height="213" key="GridCell.Tab.0.bottom" timestamp="1583599264227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="167" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583593496081" />
-    <state width="1877" height="167" key="GridCell.Tab.0.center" timestamp="1583593496081">
+    <state width="1877" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583599264227" />
+    <state width="1877" height="213" key="GridCell.Tab.0.center" timestamp="1583599264227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="167" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583593496081" />
-    <state width="1877" height="167" key="GridCell.Tab.0.left" timestamp="1583593496081">
+    <state width="1877" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583599264227" />
+    <state width="1877" height="213" key="GridCell.Tab.0.left" timestamp="1583599264227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="167" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583593496081" />
-    <state width="1877" height="167" key="GridCell.Tab.0.right" timestamp="1583593496081">
+    <state width="1877" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583599264227" />
+    <state width="1877" height="213" key="GridCell.Tab.0.right" timestamp="1583599264227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="167" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583593496081" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583349146179">
+    <state width="1877" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583599264227" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583597527931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583349146179" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1583349146179">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583597527931" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1583597527931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583349146179" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1583349146179">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583597527931" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1583597527931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583349146179" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1583349146179">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583597527931" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1583597527931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583349146179" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1583319289519">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583597527931" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1583598181364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583319289519" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583598181364" />
     <state x="583" y="268" key="caller.chooser.dialog" timestamp="1583343050979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

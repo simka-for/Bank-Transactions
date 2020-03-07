@@ -73,4 +73,14 @@ public class Account implements Comparable<Account> {
     public int compareTo(Account o) {
         return this.getNumber().compareTo(o.getNumber());
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "number='" + number + '\'' +
+                ", balance=" + balance +
+                ", BALANCE_LIMIT=" + BALANCE_LIMIT +
+                ", isBlocked=" + isBlocked +
+                '}';
+    }
 }
